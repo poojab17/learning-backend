@@ -1,8 +1,6 @@
-//required express module
-const express = require('express');
+//use to start server
+const app = require("./src/app");
 
-//create express app
- const app = express();
-
- //started server on port 3000
- app.listen(3000);
+app.listen(3000, ()=>{
+    console.log("Server is running on port 3000");
+});
